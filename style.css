@@ -1,0 +1,76 @@
+.body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+
+.main_screen {
+    background: url("Assets/led_5e4660098b4ea1.png") black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    height: 900px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 97px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    font-weight: 700;
+}
+
+.logo {
+    width: 141px;
+    height: 60px;
+    text-align: left;
+}
+
+.head_button {
+    width: 212px;
+    height: 60px;
+    border-radius: 5px;
+    background: #FD0;
+    color: #272625;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.95; /* 194.444% */
+    padding: 10px 24px;
+}
+
+.head_button .button_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post {
+    /* Все */
+}
+
+.post--regular {
+    color: #000;
+    background-color: #fff;
+}
+
+.post--invert {
+    color: #fff0;
+    background-color: #000;
+}
+
+
+
+
+
+
+
