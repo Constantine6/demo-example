@@ -341,6 +341,7 @@
     line-height: 35px; /* 194.444% */
     position: absolute;
     right: 0;
+    text-decoration: none;
 }
 
 .button__label {
