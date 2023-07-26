@@ -6,67 +6,200 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="body">
     <header class="header">
-        <div class="container">
+        <div class="header__container">
             <a class="logo" href="#">
                 <img src="./assets/logo.svg" alt="Logo">
             </a>
-            <nav class="menu">
+            <nav class="navigation">
                 <a href="#" class="phone">
-                    <img src="./assets/icon_phone.svg" alt="icon">+7 (4012) 69-70-23
+                    <img src="./assets/icon_phone.svg" alt="icon">
+                    <span class="phone__number">+7 (4012) 69-70-23</span>
                 </a>
-                <a href="#">События</a>
-                <a href="#">Афиша</a>
-                <a href="#">Арендаторам</a>
-                <a href="#">Контакты</a>
+                <div class="menu">
+                    <a class="menu__link" href="#">События</a>
+                    <a class="menu__link" href="#">Афиша</a>
+                    <a class="menu__link" href="#">Арендаторам</a>
+                    <a class="menu__link" href="#">Контакты</a>
+                </div>
             </nav>
-            <button class="head_button">
-                <span class="button_content">
-                    <span class="label">Карта этажей</span>
-                    <img src="./assets/icon_button.svg" alt="icon" class="button_icon">
-                </span>
-            </button>
+            <div class="header__buttons">
+                <button class="header__button">
+                    <span class="button__content">
+                        <span class="label">Карта этажей</span>
+                        <img src="./assets/icon_button.svg" alt="icon" class="button_icon">
+                    </span>
+                </button>
+                <a class="header__burger">
+                    <img src="./assets/icon_burger.svg" alt="burger">
+                </a>
+            </div>
         </div>
     </header>
     <main>
         <section class="main_screen">
-            <div class="content">
-                <p>в кинотеатре с 14 мая</p>
-                <h1>Премьера фильма «Лёд»</h1>
-                <button>Купить билет</button>
-                <p>* Билеты можно приобрести в кассе или на сайте кинотеатра</p>
+            <div class="main_screen__content">
+                <p class="content__overline">в кинотеатре с 14 мая</p>
+                <h1 class="content__headline">Премьера<br> фильма «Лёд»</h1>
+                <button class="content__button--main">
+                    <span class="button__content">
+                        <img src="./assets/icon_ticket.svg" alt="icon_ticket" class="button__icon">
+                        <span class="label">Купить билет</span>
+                    </span>
+                </button>
+                <p class="content__caption">* Билеты можно приобрести<br> в кассе или на сайте кинотеатра</p>
             </div>
-
-            <article class="post post--regular">
-                <picture class="post__picture">
-                    <img src="" alt="">
-                </picture>
-                <h3 class="post__title">
-                    Заголовок
-                </h3>
-                <time class="post__date">
-                    20.01.1998
-                </time>
-            </article>
-
-            <article class="post post--invert">
-                <picture class="post__picture">
-                    <img src="" alt="">
-                </picture>
-                <h3 class="post__title">
-                    Заголовок
-                </h3>
-                <time class="post__date">
-                    20.01.1998
-                </time>
-            </article>
+        </section>
+        <section class="events">
+            <div class="events__content">
+                <div class="events__headline">
+                    <img src="./assets/grafics_lines_small.svg" alt="">
+                    <h2 class="events__title">События</h2>
+                    <img src="./assets/grafics_lines.svg" alt="">
+                </div>
+                <div class="grid">
+                    <article class="grid__item">
+                        <picture class="item__picture">
+                            <img src="./assets/img_1.png" alt="">
+                        </picture>
+                        <div class="item__content">
+                            <p class="item__overline">на 1 этаже</p>
+                            <h3 class="item__title">
+                                Обновленный интерьер КанцПарк
+                            </h3>
+                            <time class="item__date">
+                                16 мая 2021
+                            </time>
+                            <a href="#" class="item__link">
+                                <span>подробнее</span>
+                                <div class="link__icon"></div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="grid__item">
+                        <picture class="item__picture">
+                            <img src="./assets/img_2.png" alt="">
+                        </picture>
+                        <div class="item__content">
+                            <p class="item__overline">на 1 этаже</p>
+                            <h3 class="item__title">
+                                Акция в Круассан Кафе
+                            </h3>
+                            <time class="item__date">
+                                16 мая 2021
+                            </time>
+                            <a href="#" class="item__link">
+                                <span>подробнее</span>
+                                <img src="./assets/icon_arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="grid__item">
+                        <picture class="item__picture">
+                            <img src="./assets/img_3.png" alt="">
+                        </picture>
+                        <div class="item__content">
+                            <p class="item__overline">на 1 этаже</p>
+                            <h3 class="item__title">
+                                Обновленный интерьер КанцПарк
+                            </h3>
+                            <time class="item__date">
+                                16 мая 2021
+                            </time>
+                            <a href="#" class="item__link">
+                                <span>подробнее</span>
+                                <img src="./assets/icon_arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="grid__item">
+                        <picture class="item__picture">
+                            <img src="./assets/img_4.png" alt="">
+                        </picture>
+                        <div class="item__content">
+                            <p class="item__overline">на 1 этаже</p>
+                            <h3 class="item__title">
+                                Акция в Круассан Кафе
+                            </h3>
+                            <time class="item__date">
+                                16 мая 2021
+                            </time>
+                            <a href="#" class="item__link">
+                                <span>подробнее</span>
+                                <img src="./assets/icon_arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <button class="events__all">Смотреть все</button>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__line1">
+            <div class="line1__container">
+                <div class="footer__row1">
+                    <a class="logo" href="#">
+                        <img src="./assets/logo.svg" alt="Logo">
+                    </a>
+                    <nav class="footer__menu">
+                        <a class="menu__link" href="#">События</a>
+                        <a class="menu__link" href="#">Афиша</a>
+                        <a class="menu__link" href="#">Магазины</a>
+                        <a class="menu__link" href="#">Кафе и рестораны</a>
+                        <a class="menu__link" href="#">Арендаторам</a>
+                        <a class="menu__link" href="#">Контакты</a>
+                    </nav>
+                    <a href="#" class="footer__button">
+                        <span class="button__content">
+                            <span class="button__label">Карта этажей</span>
+                            <img src="./assets/icon_button_yellow.svg" alt="icon" class="button_icon">
+                        </span>
+                    </a>
+                </div>
+                <div class="footer__row2">
+                    <p class="footer__copyright">
+                        © 2021 Торгово-развлекательный комплекс Пегас
+                    </p>
+                    <p class="footer__address">
+                        238530 Россия, Калининградская область, Зеленоградск, ул. Ленина, 3
+                    </p>
+                    <span class="footer__schedule">
+                        <img src="./assets/icon_clock.svg" alt="">
+                        <span class="schedule__week">Пн-Пт</span>
+                        <span class="schedule__week--time">9-21</span>
+                        <span class="schedule__weekend">Сб-Вс</span>
+                        <span class="schedule__weekend--time">10-20</span>
+                    </span>
+                    <span class="footer__soc">
+                        <span class="soc__label">
+                            Соц сети:
+                        </span>
+                        <span class="soc__icons">
+                            <img src="./assets/soc_vk.svg" alt="">
+                            <img src="./assets/soc_fb.svg" alt="">
+                            <img src="./assets/soc_ig.svg" alt="">
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__line2">
+            <div class="row3__container">
+                <a class="footer__policy">Политика конфиденциальности</a>
+                <span class="footer__phone">
+                    <img src="./assets/icon_phone.svg" alt="">
+                    <span>+7 (4012) 69-70-23</span>
+                </span>
+                <span class="footer__madeby">
+                    <span>Разработано</span>
+                    <img src="./assets/diez_logo.svg" alt="">
+                </span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
